@@ -6,8 +6,13 @@
  */
 #include "hw.h"
 
-void hwInit(void)
+bool hwInit(void)
 {
+  bool ret = true;
 
+  ret &= bspInit();
+  ret &= ledInit();
+
+  return ret;
 }
 

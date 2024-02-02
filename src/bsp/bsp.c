@@ -7,23 +7,25 @@
 #include "bsp.h"
 void SystemClock_Config(void);
 
-void bspInit(void)
+bool bspInit(void)
 {
   HAL_Init();
   SystemClock_Config();
 
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+
+  return true;
 }
 
-void delay(uint32_t ms)
+void delay(uint32_t time_ms)
 {
-
+  HAL_Delay(time_ms);
 }
 
-uint32_t mills(void)
+uint32_t millis(void)
 {
-  return 0;
+  return HAL_GetTick();
 }
 
 

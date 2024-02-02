@@ -5,23 +5,23 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/ap/ap.c 
+../src/hw/driver/led.c 
 
 OBJS += \
-./src/ap/ap.o 
+./src/hw/driver/led.o 
 
 C_DEPS += \
-./src/ap/ap.d 
+./src/hw/driver/led.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-src/ap/%.o src/ap/%.su src/ap/%.cyclo: ../src/ap/%.c src/ap/subdir.mk
+src/hw/driver/%.o src/hw/driver/%.su src/hw/driver/%.cyclo: ../src/hw/driver/%.c src/hw/driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32G474xx -c -I"C:/CubeWorspace/stm32g474_fw/src" -I"C:/CubeWorspace/stm32g474_fw/src/common/include" -I"C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/CMSIS/Device/ST/STM32G4xx/Include" -I"C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/CMSIS/Include" -I"C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc" -I"C:/CubeWorspace/stm32g474_fw/src/ap" -I"C:/CubeWorspace/stm32g474_fw/src/bsp" -I"C:/CubeWorspace/stm32g474_fw/src/common" -I"C:/CubeWorspace/stm32g474_fw/src/hw" -I"C:/CubeWorspace/stm32g474_fw/src/lib" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
 
-clean: clean-src-2f-ap
+clean: clean-src-2f-hw-2f-driver
 
-clean-src-2f-ap:
-	-$(RM) ./src/ap/ap.cyclo ./src/ap/ap.d ./src/ap/ap.o ./src/ap/ap.su
+clean-src-2f-hw-2f-driver:
+	-$(RM) ./src/hw/driver/led.cyclo ./src/hw/driver/led.d ./src/hw/driver/led.o ./src/hw/driver/led.su
 
-.PHONY: clean-src-2f-ap
+.PHONY: clean-src-2f-hw-2f-driver
 

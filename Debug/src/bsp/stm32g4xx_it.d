@@ -32,7 +32,8 @@ src/bsp/stm32g4xx_it.o: ../src/bsp/stm32g4xx_it.c \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc_ex.h \
- ../src/bsp/stm32g4xx_it.h
+ C:/CubeWorspace/stm32g474_fw/src/common/include/led.h \
+ C:/CubeWorspace/stm32g474_fw/src/hw/hw_def.h ../src/bsp/stm32g4xx_it.h
 C:/CubeWorspace/stm32g474_fw/src/main.h:
 C:/CubeWorspace/stm32g474_fw/src/ap/ap.h:
 C:/CubeWorspace/stm32g474_fw/src/hw/hw.h:
@@ -66,4 +67,6 @@ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc_ex.h:
+C:/CubeWorspace/stm32g474_fw/src/common/include/led.h:
+C:/CubeWorspace/stm32g474_fw/src/hw/hw_def.h:
 ../src/bsp/stm32g4xx_it.h:
