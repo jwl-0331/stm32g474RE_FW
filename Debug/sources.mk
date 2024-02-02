@@ -26,5 +26,6 @@ src/ap \
 src/bsp \
 src/bsp/startup \
 src/hw \
+src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src \
 src \
 
