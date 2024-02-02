@@ -1,1 +1,4 @@
 # stm32g474RE_FW
+
+SELF Study
+@REF BARAM_FW
