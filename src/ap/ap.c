@@ -18,17 +18,20 @@ void apInit(void)
 void apMain(void)
 {
 
-  //uint32_t pre_time = millis();
+  uint32_t pre_time = millis();
   while(1)
   {
     /* LED Non blocking toggle*/
+    /* Using Reg to toggle */
     /*
     if(millis()-pre_time >= 500)
     {
       pre_time = millis();
-      ledToggle(_DEF_LED1);
+      //ledToggle(_DEF_LED1);
+      gpio_out_toggle(GPIOA, GPIO_PIN_5);
     }
     */
+
 
     /* LED On Off - by time*/
     /*
