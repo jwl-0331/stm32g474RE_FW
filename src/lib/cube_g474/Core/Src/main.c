@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "rtc.h"
+#include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
 
@@ -89,6 +90,7 @@ int main(void)
   MX_GPIO_Init();
   MX_RTC_Init();
   MX_USB_Device_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

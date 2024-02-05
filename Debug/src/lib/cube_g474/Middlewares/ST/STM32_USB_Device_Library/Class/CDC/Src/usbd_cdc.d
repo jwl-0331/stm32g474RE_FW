@@ -34,6 +34,8 @@ src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc_ex.h \
+ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
+ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
@@ -72,6 +74,8 @@ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc_ex.h:
+C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
+C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:

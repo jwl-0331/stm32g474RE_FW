@@ -1,0 +1,7 @@
+../src/hw/driver/cdc.c:18:6:cdcInit	1
+../src/hw/driver/cdc.c:30:6:cdcIsInit	1
+../src/hw/driver/cdc.c:35:6:cdcIsConnect	1
+../src/hw/driver/cdc.c:40:10:cdcAvailable	1
+../src/hw/driver/cdc.c:45:9:cdcRead	1
+../src/hw/driver/cdc.c:50:10:cdcWrite	1
+../src/hw/driver/cdc.c:55:10:cdcGetBaud	1

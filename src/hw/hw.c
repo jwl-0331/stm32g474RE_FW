@@ -13,6 +13,11 @@ bool hwInit(void)
   ret &= bspInit();
   ret &= ledInit();
 
+  ret &= usbInit();
+  ret &= usbBegin(USB_CDC_MODE);
+  ret &= uartOpen(_DEF_UART1, 57600);
+  ret &= uartInit();
+
   return ret;
 }
 

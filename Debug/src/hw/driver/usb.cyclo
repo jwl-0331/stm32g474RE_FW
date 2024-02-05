@@ -1,0 +1,6 @@
+../src/hw/driver/usb.c:44:6:usbInit	1
+../src/hw/driver/usb.c:55:6:usbDeInit	2
+../src/hw/driver/usb.c:63:6:usbIsOpen	1
+../src/hw/driver/usb.c:68:6:usbIsConnect	4
+../src/hw/driver/usb.c:87:9:usbGetMode	1
+../src/hw/driver/usb.c:92:6:usbBegin	6
