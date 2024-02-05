@@ -29,7 +29,10 @@ src/bsp/bsp.o: ../src/bsp/bsp.c ../src/bsp/bsp.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc.h \
- C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc_ex.h
+ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc_ex.h \
+ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/USB_Device/App/usb_device.h \
+ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
+ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/USB_Device/Target/usbd_conf.h
 ../src/bsp/bsp.h:
 C:/CubeWorspace/stm32g474_fw/src/common/def.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
@@ -62,3 +65,6 @@ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc_ex.h:
+C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/USB_Device/App/usb_device.h:
+C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
+C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/USB_Device/Target/usbd_conf.h:

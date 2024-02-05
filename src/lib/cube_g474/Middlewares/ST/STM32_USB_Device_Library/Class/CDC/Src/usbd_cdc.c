@@ -433,7 +433,7 @@ __ALIGN_BEGIN static uint8_t USBD_CDC_OtherSpeedCfgDesc[USB_CDC_CONFIG_DESC_SIZ]
   /*Endpoint OUT Descriptor*/
   0x07,                                       /* bLength: Endpoint Descriptor size */
   USB_DESC_TYPE_ENDPOINT,                     /* bDescriptorType: Endpoint */
-  CDC_OUT_EP,                                 /* bEndpointAddress */
+  CDC_OUT_EP,                                 /* bEndpointAddress */ // PC -> MCU
   0x02,                                       /* bmAttributes: Bulk */
   0x40,                                       /* wMaxPacketSize: */
   0x00,
@@ -442,7 +442,7 @@ __ALIGN_BEGIN static uint8_t USBD_CDC_OtherSpeedCfgDesc[USB_CDC_CONFIG_DESC_SIZ]
   /*Endpoint IN Descriptor*/
   0x07,                                       /* bLength: Endpoint Descriptor size */
   USB_DESC_TYPE_ENDPOINT,                     /* bDescriptorType: Endpoint */
-  CDC_IN_EP,                                  /* bEndpointAddress */
+  CDC_IN_EP,                                  /* bEndpointAddress */ // MCU -> PC
   0x02,                                       /* bmAttributes: Bulk */
   0x40,                                       /* wMaxPacketSize: */
   0x00,

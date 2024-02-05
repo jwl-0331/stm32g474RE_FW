@@ -6,6 +6,7 @@
 "./src/bsp/sysmem.o"
 "./src/bsp/system_stm32g4xx.o"
 "./src/bsp/startup/startup_stm32g474retx.o"
+"./src/common/core/qbuffer.o"
 "./src/hw/driver/led.o"
 "./src/hw/hw.o"
 "./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o"

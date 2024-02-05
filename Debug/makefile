@@ -16,6 +16,7 @@ RM := rm -rf
 -include src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/subdir.mk
 -include src/hw/driver/subdir.mk
 -include src/hw/subdir.mk
+-include src/common/core/subdir.mk
 -include src/bsp/startup/subdir.mk
 -include src/bsp/subdir.mk
 -include src/ap/subdir.mk
