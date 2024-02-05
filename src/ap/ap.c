@@ -6,10 +6,12 @@
  */
 #include "ap.h"
 
-
+/* for duration blink*/
+/*
 static uint32_t g_LEDOnTime = 1000;
 static uint32_t g_LEDOffTime = 200;
 static uint32_t nextmill = 0;
+*/
 void apInit(void)
 {
 
@@ -18,7 +20,7 @@ void apInit(void)
 void apMain(void)
 {
 
-  uint32_t pre_time = millis();
+  //uint32_t pre_time = millis();
   while(1)
   {
     /* LED Non blocking toggle*/

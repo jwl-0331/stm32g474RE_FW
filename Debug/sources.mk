@@ -28,5 +28,9 @@ src/bsp/startup \
 src/hw/driver \
 src/hw \
 src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src \
+src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src \
+src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Src \
+src/lib/cube_g474/USB_Device/App \
+src/lib/cube_g474/USB_Device/Target \
 src \
 

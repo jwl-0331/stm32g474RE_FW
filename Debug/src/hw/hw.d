@@ -24,6 +24,9 @@ src/hw/hw.o: ../src/hw/hw.c ../src/hw/hw.h ../src/hw/hw_def.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h \
+ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h \
+ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h \
+ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc.h \
@@ -57,6 +60,9 @@ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h:
+C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h:
+C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h:
+C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc.h:

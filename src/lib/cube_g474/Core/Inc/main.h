@@ -59,6 +59,10 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define PA5_LD2_Pin GPIO_PIN_5
 #define PA5_LD2_GPIO_Port GPIOA
+#define PA11_USB_DM_Pin GPIO_PIN_11
+#define PA11_USB_DM_GPIO_Port GPIOA
+#define PA12_USB_DP_Pin GPIO_PIN_12
+#define PA12_USB_DP_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
