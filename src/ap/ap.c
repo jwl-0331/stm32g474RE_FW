@@ -15,22 +15,24 @@ static uint32_t nextmill = 0;
 
 void apInit(void)
 {
-  uartOpen(_DEF_UART2, 115200);
+
 }
 
 void apMain(void)
 {
-  uint32_t pre_time = millis();
+  uint32_t pre_time1 = millis();
+  uint32_t pre_time2 = millis();
   while(1)
   {
     /* LED Non blocking toggle*/
     /* Using Reg to toggle */
-    if(millis()-pre_time >= 500)
+    if(millis()-pre_time1 >= 500)
     {
-      pre_time = millis();
+      pre_time1 = millis();
       //ledToggle(_DEF_LED1);
       gpio_out_toggle(GPIOA, GPIO_PIN_5);
     }
+
     /* LED On Off - by time*/
     /*
     bool blinkOn = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5);
@@ -47,14 +49,26 @@ void apMain(void)
       nextmill = millis() + g_LEDOnTime;
     }
     */
-    if (uartAvailable(_DEF_UART2) > 0)
+    /* UART TESET - ERROR */
+    if (uartAvailable(_DEF_UART1) > 0)
     {
       uint8_t rx_data;
       // 데이터를 읽어온다
-      rx_data = uartRead(_DEF_UART2);
+      rx_data = uartRead(_DEF_UART1);
 
-      uartPrintf(_DEF_UART2, "Rx : 0x%d\n", rx_data);
+      uartPrintf(_DEF_UART1, "Rx : 0x%X, %c\n", rx_data, rx_data);
     }
+
+
+    /* RESET COUNT TEST */
+    /*
+    if(HAL_GetTick() - pre_time2 >= 1000)
+    {
+      pre_time2 = HAL_GetTick();
+
+      uartPrintf
+    }
+    */
   }
 }
 

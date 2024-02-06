@@ -7,18 +7,24 @@
 C_SRCS += \
 ../src/hw/driver/cdc.c \
 ../src/hw/driver/led.c \
+../src/hw/driver/reset.c \
+../src/hw/driver/rtc.c \
 ../src/hw/driver/uart.c \
 ../src/hw/driver/usb.c 
 
 OBJS += \
 ./src/hw/driver/cdc.o \
 ./src/hw/driver/led.o \
+./src/hw/driver/reset.o \
+./src/hw/driver/rtc.o \
 ./src/hw/driver/uart.o \
 ./src/hw/driver/usb.o 
 
 C_DEPS += \
 ./src/hw/driver/cdc.d \
 ./src/hw/driver/led.d \
+./src/hw/driver/reset.d \
+./src/hw/driver/rtc.d \
 ./src/hw/driver/uart.d \
 ./src/hw/driver/usb.d 
 
@@ -30,7 +36,7 @@ src/hw/driver/%.o src/hw/driver/%.su src/hw/driver/%.cyclo: ../src/hw/driver/%.c
 clean: clean-src-2f-hw-2f-driver
 
 clean-src-2f-hw-2f-driver:
-	-$(RM) ./src/hw/driver/cdc.cyclo ./src/hw/driver/cdc.d ./src/hw/driver/cdc.o ./src/hw/driver/cdc.su ./src/hw/driver/led.cyclo ./src/hw/driver/led.d ./src/hw/driver/led.o ./src/hw/driver/led.su ./src/hw/driver/uart.cyclo ./src/hw/driver/uart.d ./src/hw/driver/uart.o ./src/hw/driver/uart.su ./src/hw/driver/usb.cyclo ./src/hw/driver/usb.d ./src/hw/driver/usb.o ./src/hw/driver/usb.su
+	-$(RM) ./src/hw/driver/cdc.cyclo ./src/hw/driver/cdc.d ./src/hw/driver/cdc.o ./src/hw/driver/cdc.su ./src/hw/driver/led.cyclo ./src/hw/driver/led.d ./src/hw/driver/led.o ./src/hw/driver/led.su ./src/hw/driver/reset.cyclo ./src/hw/driver/reset.d ./src/hw/driver/reset.o ./src/hw/driver/reset.su ./src/hw/driver/rtc.cyclo ./src/hw/driver/rtc.d ./src/hw/driver/rtc.o ./src/hw/driver/rtc.su ./src/hw/driver/uart.cyclo ./src/hw/driver/uart.d ./src/hw/driver/uart.o ./src/hw/driver/uart.su ./src/hw/driver/usb.cyclo ./src/hw/driver/usb.d ./src/hw/driver/usb.o ./src/hw/driver/usb.su
 
 .PHONY: clean-src-2f-hw-2f-driver
 

@@ -1,2 +1,2 @@
-../src/ap/ap.c:16:6:apInit	8	static
-../src/ap/ap.c:21:6:apMain	16	static
+../src/ap/ap.c:16:6:apInit	4	static
+../src/ap/ap.c:21:6:apMain	24	static

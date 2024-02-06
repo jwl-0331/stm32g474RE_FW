@@ -38,10 +38,6 @@ bool uartOpen(uint8_t ch, uint32_t baud)
   switch(ch)
   {
     case _DEF_UART1:
-      is_open[ch] = true;
-      ret = true;
-      break;
-    case _DEF_UART2:
       huart1.Instance = USART1;
       huart1.Init.BaudRate = baud;
       huart1.Init.ClockPrescaler = UART_PRESCALER_DIV1;
@@ -103,10 +99,7 @@ uint32_t uartAvailable(uint8_t ch)
   switch(ch)
   {
     case _DEF_UART1:
-      ret = cdcAvailable();
-      break;
-    case _DEF_UART2:
-      qbufferRead(&qbuffer[ch],&ret,1);
+      ret = qbufferAvailable(&qbuffer[ch]);
       break;
   }
 
@@ -136,9 +129,6 @@ uint8_t uartRead(uint8_t ch)
   switch(ch)
   {
     case _DEF_UART1:
-      ret = cdcRead();
-      break;
-    case _DEF_UART2:
       qbufferRead(&qbuffer[ch],&ret,1);
       break;
   }
@@ -153,9 +143,6 @@ uint32_t uartWrite(uint8_t ch, uint8_t *p_data, uint32_t length)
   switch(ch)
   {
     case _DEF_UART1:
-      ret = cdcWrite(p_data, length);
-      break;
-    case _DEF_UART2:
       status = HAL_UART_Transmit(&huart1, p_data, length, 100);
       if(status == HAL_OK)
       {
@@ -193,9 +180,6 @@ uint32_t uartGetBaud(uint8_t ch)
   switch(ch)
   {
     case _DEF_UART1:
-      ret = cdcGetBaud();
-      break;
-    case _DEF_UART2:
       ret = huart1.Init.BaudRate;
       break;
   }
@@ -217,9 +201,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
   {
     // 빠르게 송신시 1 바이트 사용시 인터럽트가 많이 걸려서 처리가 늦어져 overrun (덮어쓰기 에러) , 데이터 손실 에러 발생 가능
     // 고속의 송수신 - DMA 방식을 사용
-    qbufferWrite(&qbuffer[_DEF_UART2], &rx_data[_DEF_UART2], 1);
+    qbufferWrite(&qbuffer[_DEF_UART1], &rx_data[_DEF_UART1], 1);
 
-    HAL_UART_Receive_IT(&huart1, (uint8_t*)&rx_data[_DEF_UART2], 1);
+    HAL_UART_Receive_IT(&huart1, (uint8_t*)&rx_data[_DEF_UART1], 1);
   }
 }
 

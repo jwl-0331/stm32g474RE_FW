@@ -9,6 +9,8 @@
 #define SRC_HW_HW_H_
 
 #include "hw_def.h"
+#include "rtc.h"
+#include "reset.h"
 #include "led.h"
 #include "cdc.h"
 #include "usb.h"

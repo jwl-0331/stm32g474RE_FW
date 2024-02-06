@@ -9,6 +9,8 @@
 "./src/common/core/qbuffer.o"
 "./src/hw/driver/cdc.o"
 "./src/hw/driver/led.o"
+"./src/hw/driver/reset.o"
+"./src/hw/driver/rtc.o"
 "./src/hw/driver/uart.o"
 "./src/hw/driver/usb.o"
 "./src/hw/hw.o"

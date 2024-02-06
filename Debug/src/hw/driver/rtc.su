@@ -1,0 +1,5 @@
+../src/hw/driver/rtc.c:19:6:rtcInit	16	static
+../src/hw/driver/rtc.c:44:10:rtcBackupRegRead	16	static
+../src/hw/driver/rtc.c:49:6:rtcBackupRegWrite	16	static
+../src/hw/driver/rtc.c:57:6:HAL_RTC_MspInit	16	static
+../src/hw/driver/rtc.c:73:6:HAL_RTC_MspDeInit	16	static
