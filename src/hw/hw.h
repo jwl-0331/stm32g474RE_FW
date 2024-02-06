@@ -15,6 +15,7 @@
 #include "cdc.h"
 #include "usb.h"
 #include "uart.h"
+#include "button.h"
 
 bool hwInit(void);
 

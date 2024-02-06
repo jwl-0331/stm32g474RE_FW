@@ -22,6 +22,7 @@ bool hwInit(void)
     resetToSystemBoot();
   }
 #endif
+  ret &= buttonInit();
   ret &= ledInit();
   ret &= usbInit();
   ret &= usbBegin(USB_CDC_MODE);
