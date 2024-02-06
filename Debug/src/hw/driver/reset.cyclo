@@ -1,7 +1,7 @@
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/CMSIS/Include/core_cm4.h:1933:34:__NVIC_SystemReset	1
-../src/hw/driver/reset.c:20:6:resetISR	3
-../src/hw/driver/reset.c:34:6:resetInit	4
-../src/hw/driver/reset.c:62:10:resetGetCount	1
-../src/hw/driver/reset.c:67:6:resetToBoot	2
-../src/hw/driver/reset.c:79:6:resetToSystemBoot	2
-../src/hw/driver/reset.c:109:6:resetToRunBoot	0
+../src/hw/driver/reset.c:21:6:resetISR	3
+../src/hw/driver/reset.c:35:6:resetInit	5
+../src/hw/driver/reset.c:64:10:resetGetCount	1
+../src/hw/driver/reset.c:69:6:resetToBoot	2
+../src/hw/driver/reset.c:81:6:resetToSystemBoot	2
+../src/hw/driver/reset.c:111:6:resetToRunBoot	0

@@ -5,7 +5,6 @@
  *      Author: mm940
  */
 #include "ap.h"
-
 /* for duration blink*/
 /*
 static uint32_t g_LEDOnTime = 1000;
@@ -49,7 +48,8 @@ void apMain(void)
       nextmill = millis() + g_LEDOnTime;
     }
     */
-    /* UART TESET - ERROR */
+    /* UART TESET*/
+    /*
     if (uartAvailable(_DEF_UART1) > 0)
     {
       uint8_t rx_data;
@@ -58,17 +58,8 @@ void apMain(void)
 
       uartPrintf(_DEF_UART1, "Rx : 0x%X, %c\n", rx_data, rx_data);
     }
-
-
-    /* RESET COUNT TEST */
-    /*
-    if(HAL_GetTick() - pre_time2 >= 1000)
-    {
-      pre_time2 = HAL_GetTick();
-
-      uartPrintf
-    }
     */
+
   }
 }
 

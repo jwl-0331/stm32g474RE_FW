@@ -11,9 +11,11 @@ void SystemClock_Config(void);
 
 bool bspInit(void)
 {
+  __HAL_RCC_SYSCFG_CLK_ENABLE();
+
+
   HAL_Init();
   SystemClock_Config();
-
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
@@ -54,6 +56,8 @@ uint32_t millis(void)
 
 void SystemClock_Config(void)
 {
+
+  __HAL_RCC_GPIOC_CLK_ENABLE();
 
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
