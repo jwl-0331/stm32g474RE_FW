@@ -48,7 +48,7 @@ void apMain(void)
       nextmill = millis() + g_LEDOnTime;
     }
     */
-    /* UART TESET*/
+    /* UART TEST*/
     /*
     if (uartAvailable(_DEF_UART1) > 0)
     {
@@ -60,6 +60,27 @@ void apMain(void)
     }
     */
 
+    /* FLASH Test*/
+    if(uartAvailable(_DEF_UART1) > 0)
+    {
+      int8_t rx_data;
+
+      rx_data = uartRead(_DEF_UART1);
+      //erase - flash 특성상 지우면 0xfff
+      if(rx_data == '2')
+      {
+        uartPrintf(_DEF_UART1,"Erase...\n");
+        //지우고자하는 시작 주소 , length
+        if(flashErase(0x0800000, 12) == true)
+        {
+          uartPrintf(_DEF_UART1,"Erase OK\n");
+        }
+        else
+        {
+          uartPrintf(_DEF_UART1,"Erase Fail\n");
+        }
+      }
+    }
   }
 }
 

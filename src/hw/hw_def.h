@@ -26,5 +26,6 @@
 #define _USE_HW_BTN
 #define   HW_BTN_MAX_CH         1
 
+#define _USE_HW_FLASH
 
 #endif /* SRC_HW_HW_DEF_H_ */

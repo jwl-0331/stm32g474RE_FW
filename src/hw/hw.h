@@ -16,6 +16,7 @@
 #include "usb.h"
 #include "uart.h"
 #include "button.h"
+#include "flash.h"
 
 bool hwInit(void);
 

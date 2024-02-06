@@ -22,6 +22,7 @@ bool hwInit(void)
     resetToSystemBoot();
   }
 #endif
+  ret &= flashInit();
   ret &= buttonInit();
   ret &= ledInit();
   ret &= usbInit();
@@ -30,7 +31,7 @@ bool hwInit(void)
   ret &= uartOpen(_DEF_UART1, 115200);
 
   /* Reset Test */
-  //uartPrintf(_DEF_UART1, "Reset Count : %d\n", resetGetCount());
+  uartPrintf(_DEF_UART1, "Reset Count : %d\n", resetGetCount());
   return ret;
 }
 
