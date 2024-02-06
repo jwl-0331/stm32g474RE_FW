@@ -67,17 +67,18 @@ bool flashErase(uint32_t addr, uint32_t length)
     //@ref FLASH_Type_Erase
     EraseInit.TypeErase = FLASH_TYPEERASE_PAGES;
     //@ref FLASH_Banks  - FLASH_BANK_BOTH  , 1
-    EraseInit.Banks = FLASH_BANK_1;
+    EraseInit.Banks = FLASH_BANK_BOTH;
     EraseInit.Page = start_sector;    // sector 번호 OR sector address , 확인해야댐 (페이지 번호를 주거나, 지우는 주소를 주거나)
     EraseInit.NbPages = (end_sector - start_sector) + 1;     // 페이지 개수 (시작 페이지 부터 몇개의 페이지를 지울 것인가)
 
     status = HAL_FLASHEx_Erase(&EraseInit, &SectorError);
-
     if(status == HAL_OK)
     {
      ret = true;
     }
   }
+
+  return ret;
 }
 
 bool flashWrite(uint32_t addr, uint8_t *p_data, uint32_t length)

@@ -66,12 +66,12 @@ void apMain(void)
       int8_t rx_data;
 
       rx_data = uartRead(_DEF_UART1);
-      //erase - flash 특성상 지우면 0xfff
+      //erase - flash 특성상 지우면 0xffff , erase 특정 구간에서 erase fail 이유 ?
       if(rx_data == '2')
       {
         uartPrintf(_DEF_UART1,"Erase...\n");
         //지우고자하는 시작 주소 , length
-        if(flashErase(0x0800000, 12) == true)
+        if(flashErase(0x0800FFFF, 12) == true)
         {
           uartPrintf(_DEF_UART1,"Erase OK\n");
         }

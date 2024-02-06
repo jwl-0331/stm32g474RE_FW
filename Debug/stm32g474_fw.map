@@ -6614,190 +6614,190 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .text.apInit   0x00000000080005bc        0xe ./src/ap/ap.o
                 0x00000000080005bc                apInit
  *fill*         0x00000000080005ca        0x2 
- .text.apMain   0x00000000080005cc       0x88 ./src/ap/ap.o
+ .text.apMain   0x00000000080005cc       0x8c ./src/ap/ap.o
                 0x00000000080005cc                apMain
- .text.bspInit  0x0000000008000654       0xcc ./src/bsp/bsp.o
-                0x0000000008000654                bspInit
- .text.delay    0x0000000008000720       0x16 ./src/bsp/bsp.o
-                0x0000000008000720                delay
- .text.millis   0x0000000008000736        0xe ./src/bsp/bsp.o
-                0x0000000008000736                millis
+ .text.bspInit  0x0000000008000658       0xcc ./src/bsp/bsp.o
+                0x0000000008000658                bspInit
+ .text.delay    0x0000000008000724       0x16 ./src/bsp/bsp.o
+                0x0000000008000724                delay
+ .text.millis   0x000000000800073a        0xe ./src/bsp/bsp.o
+                0x000000000800073a                millis
  .text.SystemClock_Config
-                0x0000000008000744       0xb4 ./src/bsp/bsp.o
-                0x0000000008000744                SystemClock_Config
+                0x0000000008000748       0xb4 ./src/bsp/bsp.o
+                0x0000000008000748                SystemClock_Config
  .text.Error_Handler
-                0x00000000080007f8        0xe ./src/bsp/bsp.o
-                0x00000000080007f8                Error_Handler
- *fill*         0x0000000008000806        0x2 
+                0x00000000080007fc        0xe ./src/bsp/bsp.o
+                0x00000000080007fc                Error_Handler
+ *fill*         0x000000000800080a        0x2 
  .text.HAL_MspInit
-                0x0000000008000808       0x48 ./src/bsp/stm32g4xx_hal_msp.o
-                0x0000000008000808                HAL_MspInit
+                0x000000000800080c       0x48 ./src/bsp/stm32g4xx_hal_msp.o
+                0x000000000800080c                HAL_MspInit
  .text.NMI_Handler
-                0x0000000008000850        0x6 ./src/bsp/stm32g4xx_it.o
-                0x0000000008000850                NMI_Handler
+                0x0000000008000854        0x6 ./src/bsp/stm32g4xx_it.o
+                0x0000000008000854                NMI_Handler
  .text.HardFault_Handler
-                0x0000000008000856        0x6 ./src/bsp/stm32g4xx_it.o
-                0x0000000008000856                HardFault_Handler
+                0x000000000800085a        0x6 ./src/bsp/stm32g4xx_it.o
+                0x000000000800085a                HardFault_Handler
  .text.MemManage_Handler
-                0x000000000800085c        0x6 ./src/bsp/stm32g4xx_it.o
-                0x000000000800085c                MemManage_Handler
+                0x0000000008000860        0x6 ./src/bsp/stm32g4xx_it.o
+                0x0000000008000860                MemManage_Handler
  .text.BusFault_Handler
-                0x0000000008000862        0x6 ./src/bsp/stm32g4xx_it.o
-                0x0000000008000862                BusFault_Handler
+                0x0000000008000866        0x6 ./src/bsp/stm32g4xx_it.o
+                0x0000000008000866                BusFault_Handler
  .text.UsageFault_Handler
-                0x0000000008000868        0x6 ./src/bsp/stm32g4xx_it.o
-                0x0000000008000868                UsageFault_Handler
+                0x000000000800086c        0x6 ./src/bsp/stm32g4xx_it.o
+                0x000000000800086c                UsageFault_Handler
  .text.SVC_Handler
-                0x000000000800086e        0xe ./src/bsp/stm32g4xx_it.o
-                0x000000000800086e                SVC_Handler
+                0x0000000008000872        0xe ./src/bsp/stm32g4xx_it.o
+                0x0000000008000872                SVC_Handler
  .text.DebugMon_Handler
-                0x000000000800087c        0xe ./src/bsp/stm32g4xx_it.o
-                0x000000000800087c                DebugMon_Handler
+                0x0000000008000880        0xe ./src/bsp/stm32g4xx_it.o
+                0x0000000008000880                DebugMon_Handler
  .text.PendSV_Handler
-                0x000000000800088a        0xe ./src/bsp/stm32g4xx_it.o
-                0x000000000800088a                PendSV_Handler
+                0x000000000800088e        0xe ./src/bsp/stm32g4xx_it.o
+                0x000000000800088e                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008000898        0xc ./src/bsp/stm32g4xx_it.o
-                0x0000000008000898                SysTick_Handler
+                0x000000000800089c        0xc ./src/bsp/stm32g4xx_it.o
+                0x000000000800089c                SysTick_Handler
  .text.USB_LP_IRQHandler
-                0x00000000080008a4       0x14 ./src/bsp/stm32g4xx_it.o
-                0x00000000080008a4                USB_LP_IRQHandler
+                0x00000000080008a8       0x14 ./src/bsp/stm32g4xx_it.o
+                0x00000000080008a8                USB_LP_IRQHandler
  .text.USART1_IRQHandler
-                0x00000000080008b8       0x14 ./src/bsp/stm32g4xx_it.o
-                0x00000000080008b8                USART1_IRQHandler
- .text._sbrk    0x00000000080008cc       0x6c ./src/bsp/sysmem.o
-                0x00000000080008cc                _sbrk
+                0x00000000080008bc       0x14 ./src/bsp/stm32g4xx_it.o
+                0x00000000080008bc                USART1_IRQHandler
+ .text._sbrk    0x00000000080008d0       0x6c ./src/bsp/sysmem.o
+                0x00000000080008d0                _sbrk
  .text.SystemInit
-                0x0000000008000938       0x24 ./src/bsp/system_stm32g4xx.o
-                0x0000000008000938                SystemInit
+                0x000000000800093c       0x24 ./src/bsp/system_stm32g4xx.o
+                0x000000000800093c                SystemInit
  .text.Reset_Handler
-                0x000000000800095c       0x50 ./src/bsp/startup/startup_stm32g474retx.o
-                0x000000000800095c                Reset_Handler
+                0x0000000008000960       0x50 ./src/bsp/startup/startup_stm32g474retx.o
+                0x0000000008000960                Reset_Handler
  .text.Default_Handler
-                0x00000000080009ac        0x2 ./src/bsp/startup/startup_stm32g474retx.o
-                0x00000000080009ac                EXTI2_IRQHandler
-                0x00000000080009ac                TIM8_TRG_COM_IRQHandler
-                0x00000000080009ac                TIM8_CC_IRQHandler
-                0x00000000080009ac                DMA2_CH8_IRQHandler
-                0x00000000080009ac                DMA1_CH4_IRQHandler
-                0x00000000080009ac                SPI4_IRQHandler
-                0x00000000080009ac                HRTIM_TIM_FLT_IRQn_IRQHandler
-                0x00000000080009ac                FDCAN3_IT0_IRQHandler
-                0x00000000080009ac                TIM1_CC_IRQHandler
-                0x00000000080009ac                Cordic_IRQHandler
-                0x00000000080009ac                USB_HP_IRQHandler
-                0x00000000080009ac                HRTIM_TIMD_IRQn_IRQHandler
-                0x00000000080009ac                EXTI3_IRQHandler
-                0x00000000080009ac                I2C3_ER_IRQHandler
-                0x00000000080009ac                HRTIM_Master_IRQn_IRQHandler
-                0x00000000080009ac                DMA1_CH8_IRQHandler
-                0x00000000080009ac                TIM6_DACUNDER_IRQHandler
-                0x00000000080009ac                EXTI0_IRQHandler
-                0x00000000080009ac                I2C2_EV_IRQHandler
-                0x00000000080009ac                DMA2_CH1_IRQHandler
-                0x00000000080009ac                FDCAN1_IT1_IRQHandler
-                0x00000000080009ac                TIM1_UP_TIM16_IRQHandler
-                0x00000000080009ac                DMA2_CH7_IRQHandler
-                0x00000000080009ac                ADC1_2_IRQHandler
-                0x00000000080009ac                SPI1_IRQHandler
-                0x00000000080009ac                DMA1_CH7_IRQHandler
-                0x00000000080009ac                HRTIM_TIMB_IRQn_IRQHandler
-                0x00000000080009ac                TIM8_UP_IRQHandler
-                0x00000000080009ac                USBWakeUP_IRQHandler
-                0x00000000080009ac                RTC_ALARM_IRQHandler
-                0x00000000080009ac                DMA1_CH6_IRQHandler
-                0x00000000080009ac                TIM20_TRG_COM_IRQHandler
-                0x00000000080009ac                USART3_IRQHandler
-                0x00000000080009ac                LPUART_IRQHandler
-                0x00000000080009ac                UART5_IRQHandler
-                0x00000000080009ac                ADC3_IRQHandler
-                0x00000000080009ac                TIM4_IRQHandler
-                0x00000000080009ac                QUADSPI_IRQHandler
-                0x00000000080009ac                I2C1_EV_IRQHandler
-                0x00000000080009ac                DMA2_CH5_IRQHandler
-                0x00000000080009ac                UART4_IRQHandler
-                0x00000000080009ac                DMA1_CH3_IRQHandler
-                0x00000000080009ac                TIM3_IRQHandler
-                0x00000000080009ac                RCC_IRQHandler
-                0x00000000080009ac                TIM20_UP_IRQHandler
-                0x00000000080009ac                TIM1_TRG_COM_IRQHandler
-                0x00000000080009ac                Default_Handler
-                0x00000000080009ac                FMAC_IRQHandler
-                0x00000000080009ac                EXTI15_10_IRQHandler
-                0x00000000080009ac                TIM7_IRQHandler
-                0x00000000080009ac                FDCAN3_IT1_IRQHandler
-                0x00000000080009ac                TIM5_IRQHandler
-                0x00000000080009ac                UCPD1_IRQHandler
-                0x00000000080009ac                I2C3_EV_IRQHandler
-                0x00000000080009ac                EXTI9_5_IRQHandler
-                0x00000000080009ac                DMA1_CH2_IRQHandler
-                0x00000000080009ac                RTC_WKUP_IRQHandler
-                0x00000000080009ac                SAI_IRQHandler
-                0x00000000080009ac                PVD_PVM_IRQHandler
-                0x00000000080009ac                SPI2_IRQHandler
-                0x00000000080009ac                DMA1_CH1_IRQHandler
-                0x00000000080009ac                ADC5_IRQHandler
-                0x00000000080009ac                CRS_IRQHandler
-                0x00000000080009ac                EXTI4_IRQHandler
-                0x00000000080009ac                RNG_IRQHandler
-                0x00000000080009ac                FDCAN2_IT1_IRQHandler
-                0x00000000080009ac                HRTIM_TIMF_IRQn_IRQHandler
-                0x00000000080009ac                ADC4_IRQHandler
-                0x00000000080009ac                HRTIM_TIMA_IRQn_IRQHandler
-                0x00000000080009ac                WWDG_IRQHandler
-                0x00000000080009ac                I2C4_EV_IRQHandler
-                0x00000000080009ac                FDCAN2_IT0_IRQHandler
-                0x00000000080009ac                FDCAN1_IT0_IRQHandler
-                0x00000000080009ac                TIM2_IRQHandler
-                0x00000000080009ac                COMP7_IRQHandler
-                0x00000000080009ac                COMP1_2_3_IRQHandler
-                0x00000000080009ac                EXTI1_IRQHandler
-                0x00000000080009ac                HRTIM_TIMC_IRQn_IRQHandler
-                0x00000000080009ac                USART2_IRQHandler
-                0x00000000080009ac                COMP4_5_6_IRQHandler
-                0x00000000080009ac                TIM20_BRK_IRQHandler
-                0x00000000080009ac                I2C2_ER_IRQHandler
-                0x00000000080009ac                TIM8_BRK_IRQHandler
-                0x00000000080009ac                FLASH_IRQHandler
-                0x00000000080009ac                TIM20_CC_IRQHandler
-                0x00000000080009ac                SPI3_IRQHandler
-                0x00000000080009ac                DMA2_CH6_IRQHandler
-                0x00000000080009ac                DMA2_CH3_IRQHandler
-                0x00000000080009ac                DMA2_CH2_IRQHandler
-                0x00000000080009ac                I2C1_ER_IRQHandler
-                0x00000000080009ac                FMC_IRQHandler
-                0x00000000080009ac                DMA1_CH5_IRQHandler
-                0x00000000080009ac                DMA2_CH4_IRQHandler
-                0x00000000080009ac                LPTIM1_IRQHandler
-                0x00000000080009ac                DMAMUX_OVR_IRQHandler
-                0x00000000080009ac                I2C4_ER_IRQHandler
-                0x00000000080009ac                HRTIM_TIME_IRQn_IRQHandler
-                0x00000000080009ac                RTC_TAMP_CSS_LSE_IRQHandler
-                0x00000000080009ac                TIM1_BRK_TIM15_IRQHandler
+                0x00000000080009b0        0x2 ./src/bsp/startup/startup_stm32g474retx.o
+                0x00000000080009b0                EXTI2_IRQHandler
+                0x00000000080009b0                TIM8_TRG_COM_IRQHandler
+                0x00000000080009b0                TIM8_CC_IRQHandler
+                0x00000000080009b0                DMA2_CH8_IRQHandler
+                0x00000000080009b0                DMA1_CH4_IRQHandler
+                0x00000000080009b0                SPI4_IRQHandler
+                0x00000000080009b0                HRTIM_TIM_FLT_IRQn_IRQHandler
+                0x00000000080009b0                FDCAN3_IT0_IRQHandler
+                0x00000000080009b0                TIM1_CC_IRQHandler
+                0x00000000080009b0                Cordic_IRQHandler
+                0x00000000080009b0                USB_HP_IRQHandler
+                0x00000000080009b0                HRTIM_TIMD_IRQn_IRQHandler
+                0x00000000080009b0                EXTI3_IRQHandler
+                0x00000000080009b0                I2C3_ER_IRQHandler
+                0x00000000080009b0                HRTIM_Master_IRQn_IRQHandler
+                0x00000000080009b0                DMA1_CH8_IRQHandler
+                0x00000000080009b0                TIM6_DACUNDER_IRQHandler
+                0x00000000080009b0                EXTI0_IRQHandler
+                0x00000000080009b0                I2C2_EV_IRQHandler
+                0x00000000080009b0                DMA2_CH1_IRQHandler
+                0x00000000080009b0                FDCAN1_IT1_IRQHandler
+                0x00000000080009b0                TIM1_UP_TIM16_IRQHandler
+                0x00000000080009b0                DMA2_CH7_IRQHandler
+                0x00000000080009b0                ADC1_2_IRQHandler
+                0x00000000080009b0                SPI1_IRQHandler
+                0x00000000080009b0                DMA1_CH7_IRQHandler
+                0x00000000080009b0                HRTIM_TIMB_IRQn_IRQHandler
+                0x00000000080009b0                TIM8_UP_IRQHandler
+                0x00000000080009b0                USBWakeUP_IRQHandler
+                0x00000000080009b0                RTC_ALARM_IRQHandler
+                0x00000000080009b0                DMA1_CH6_IRQHandler
+                0x00000000080009b0                TIM20_TRG_COM_IRQHandler
+                0x00000000080009b0                USART3_IRQHandler
+                0x00000000080009b0                LPUART_IRQHandler
+                0x00000000080009b0                UART5_IRQHandler
+                0x00000000080009b0                ADC3_IRQHandler
+                0x00000000080009b0                TIM4_IRQHandler
+                0x00000000080009b0                QUADSPI_IRQHandler
+                0x00000000080009b0                I2C1_EV_IRQHandler
+                0x00000000080009b0                DMA2_CH5_IRQHandler
+                0x00000000080009b0                UART4_IRQHandler
+                0x00000000080009b0                DMA1_CH3_IRQHandler
+                0x00000000080009b0                TIM3_IRQHandler
+                0x00000000080009b0                RCC_IRQHandler
+                0x00000000080009b0                TIM20_UP_IRQHandler
+                0x00000000080009b0                TIM1_TRG_COM_IRQHandler
+                0x00000000080009b0                Default_Handler
+                0x00000000080009b0                FMAC_IRQHandler
+                0x00000000080009b0                EXTI15_10_IRQHandler
+                0x00000000080009b0                TIM7_IRQHandler
+                0x00000000080009b0                FDCAN3_IT1_IRQHandler
+                0x00000000080009b0                TIM5_IRQHandler
+                0x00000000080009b0                UCPD1_IRQHandler
+                0x00000000080009b0                I2C3_EV_IRQHandler
+                0x00000000080009b0                EXTI9_5_IRQHandler
+                0x00000000080009b0                DMA1_CH2_IRQHandler
+                0x00000000080009b0                RTC_WKUP_IRQHandler
+                0x00000000080009b0                SAI_IRQHandler
+                0x00000000080009b0                PVD_PVM_IRQHandler
+                0x00000000080009b0                SPI2_IRQHandler
+                0x00000000080009b0                DMA1_CH1_IRQHandler
+                0x00000000080009b0                ADC5_IRQHandler
+                0x00000000080009b0                CRS_IRQHandler
+                0x00000000080009b0                EXTI4_IRQHandler
+                0x00000000080009b0                RNG_IRQHandler
+                0x00000000080009b0                FDCAN2_IT1_IRQHandler
+                0x00000000080009b0                HRTIM_TIMF_IRQn_IRQHandler
+                0x00000000080009b0                ADC4_IRQHandler
+                0x00000000080009b0                HRTIM_TIMA_IRQn_IRQHandler
+                0x00000000080009b0                WWDG_IRQHandler
+                0x00000000080009b0                I2C4_EV_IRQHandler
+                0x00000000080009b0                FDCAN2_IT0_IRQHandler
+                0x00000000080009b0                FDCAN1_IT0_IRQHandler
+                0x00000000080009b0                TIM2_IRQHandler
+                0x00000000080009b0                COMP7_IRQHandler
+                0x00000000080009b0                COMP1_2_3_IRQHandler
+                0x00000000080009b0                EXTI1_IRQHandler
+                0x00000000080009b0                HRTIM_TIMC_IRQn_IRQHandler
+                0x00000000080009b0                USART2_IRQHandler
+                0x00000000080009b0                COMP4_5_6_IRQHandler
+                0x00000000080009b0                TIM20_BRK_IRQHandler
+                0x00000000080009b0                I2C2_ER_IRQHandler
+                0x00000000080009b0                TIM8_BRK_IRQHandler
+                0x00000000080009b0                FLASH_IRQHandler
+                0x00000000080009b0                TIM20_CC_IRQHandler
+                0x00000000080009b0                SPI3_IRQHandler
+                0x00000000080009b0                DMA2_CH6_IRQHandler
+                0x00000000080009b0                DMA2_CH3_IRQHandler
+                0x00000000080009b0                DMA2_CH2_IRQHandler
+                0x00000000080009b0                I2C1_ER_IRQHandler
+                0x00000000080009b0                FMC_IRQHandler
+                0x00000000080009b0                DMA1_CH5_IRQHandler
+                0x00000000080009b0                DMA2_CH4_IRQHandler
+                0x00000000080009b0                LPTIM1_IRQHandler
+                0x00000000080009b0                DMAMUX_OVR_IRQHandler
+                0x00000000080009b0                I2C4_ER_IRQHandler
+                0x00000000080009b0                HRTIM_TIME_IRQn_IRQHandler
+                0x00000000080009b0                RTC_TAMP_CSS_LSE_IRQHandler
+                0x00000000080009b0                TIM1_BRK_TIM15_IRQHandler
  .text.qbufferCreate
-                0x00000000080009ae       0x3c ./src/common/core/qbuffer.o
-                0x00000000080009ae                qbufferCreate
+                0x00000000080009b2       0x3c ./src/common/core/qbuffer.o
+                0x00000000080009b2                qbufferCreate
  .text.qbufferWrite
-                0x00000000080009ea       0xb8 ./src/common/core/qbuffer.o
-                0x00000000080009ea                qbufferWrite
+                0x00000000080009ee       0xb8 ./src/common/core/qbuffer.o
+                0x00000000080009ee                qbufferWrite
  .text.qbufferRead
-                0x0000000008000aa2       0xb0 ./src/common/core/qbuffer.o
-                0x0000000008000aa2                qbufferRead
+                0x0000000008000aa6       0xb0 ./src/common/core/qbuffer.o
+                0x0000000008000aa6                qbufferRead
  .text.qbufferAvailable
-                0x0000000008000b52       0x30 ./src/common/core/qbuffer.o
-                0x0000000008000b52                qbufferAvailable
- *fill*         0x0000000008000b82        0x2 
+                0x0000000008000b56       0x30 ./src/common/core/qbuffer.o
+                0x0000000008000b56                qbufferAvailable
+ *fill*         0x0000000008000b86        0x2 
  .text.buttonInit
-                0x0000000008000b84      0x130 ./src/hw/driver/button.o
-                0x0000000008000b84                buttonInit
- .text.cdcInit  0x0000000008000cb4       0x30 ./src/hw/driver/cdc.o
-                0x0000000008000cb4                cdcInit
+                0x0000000008000b88      0x130 ./src/hw/driver/button.o
+                0x0000000008000b88                buttonInit
+ .text.cdcInit  0x0000000008000cb8       0x30 ./src/hw/driver/cdc.o
+                0x0000000008000cb8                cdcInit
  .text.flashInit
-                0x0000000008000ce4       0x18 ./src/hw/driver/flash.o
-                0x0000000008000ce4                flashInit
+                0x0000000008000ce8       0x18 ./src/hw/driver/flash.o
+                0x0000000008000ce8                flashInit
  .text.flashErase
-                0x0000000008000cfc       0xac ./src/hw/driver/flash.o
-                0x0000000008000cfc                flashErase
+                0x0000000008000d00       0xa8 ./src/hw/driver/flash.o
+                0x0000000008000d00                flashErase
  .text.flashInSector
                 0x0000000008000da8       0x9c ./src/hw/driver/flash.o
  .text.ledInit  0x0000000008000e44       0x88 ./src/hw/driver/led.o
@@ -8301,7 +8301,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x000000000002b5ea      0x38b ./src/lib/cube_g474/USB_Device/Target/usbd_conf.o
  .debug_macro   0x000000000002b975      0x3d0 ./src/main.o
 
-.debug_line     0x0000000000000000    0x25e68
+.debug_line     0x0000000000000000    0x25e69
  .debug_line    0x0000000000000000      0xb4b ./src/ap/ap.o
  .debug_line    0x0000000000000b4b      0xc0e ./src/bsp/bsp.o
  .debug_line    0x0000000000001759      0xb6f ./src/bsp/stm32g4xx_hal_msp.o
@@ -8312,38 +8312,38 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x0000000000003ade      0x830 ./src/common/core/qbuffer.o
  .debug_line    0x000000000000430e     0x10cb ./src/hw/driver/button.o
  .debug_line    0x00000000000053d9      0xd04 ./src/hw/driver/cdc.o
- .debug_line    0x00000000000060dd      0xbbe ./src/hw/driver/flash.o
- .debug_line    0x0000000000006c9b      0xbdc ./src/hw/driver/led.o
- .debug_line    0x0000000000007877      0xc89 ./src/hw/driver/reset.o
- .debug_line    0x0000000000008500      0xb60 ./src/hw/driver/rtc.o
- .debug_line    0x0000000000009060      0xd5c ./src/hw/driver/uart.o
- .debug_line    0x0000000000009dbc      0xd48 ./src/hw/driver/usb.o
- .debug_line    0x000000000000ab04      0xb5a ./src/hw/hw.o
- .debug_line    0x000000000000b65e      0xcb4 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
- .debug_line    0x000000000000c312      0xe1f ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
- .debug_line    0x000000000000d131      0xfd8 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.o
- .debug_line    0x000000000000e109      0xc61 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.o
- .debug_line    0x000000000000ed6a     0x1102 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.o
- .debug_line    0x000000000000fe6c      0xcaf ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
- .debug_line    0x0000000000010b1b     0x14be ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd.o
- .debug_line    0x0000000000011fd9      0x9f4 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd_ex.o
- .debug_line    0x00000000000129cd      0xe23 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
- .debug_line    0x00000000000137f0     0x107c ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
- .debug_line    0x000000000001486c     0x138f ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
- .debug_line    0x0000000000015bfb     0x115d ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rtc.o
- .debug_line    0x0000000000016d58     0x1423 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rtc_ex.o
- .debug_line    0x000000000001817b     0x3cfc ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
- .debug_line    0x000000000001be77      0xed7 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
- .debug_line    0x000000000001cd4e     0x1154 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usb.o
- .debug_line    0x000000000001dea2      0xf49 ./src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o
- .debug_line    0x000000000001edeb      0xf9c ./src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
- .debug_line    0x000000000001fd87     0x1254 ./src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
- .debug_line    0x0000000000020fdb      0xbf3 ./src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_line    0x0000000000021bce      0xbdb ./src/lib/cube_g474/USB_Device/App/usb_device.o
- .debug_line    0x00000000000227a9      0xecb ./src/lib/cube_g474/USB_Device/App/usbd_cdc_if.o
- .debug_line    0x0000000000023674      0xc78 ./src/lib/cube_g474/USB_Device/App/usbd_desc.o
- .debug_line    0x00000000000242ec     0x1040 ./src/lib/cube_g474/USB_Device/Target/usbd_conf.o
- .debug_line    0x000000000002532c      0xb3c ./src/main.o
+ .debug_line    0x00000000000060dd      0xbbf ./src/hw/driver/flash.o
+ .debug_line    0x0000000000006c9c      0xbdc ./src/hw/driver/led.o
+ .debug_line    0x0000000000007878      0xc89 ./src/hw/driver/reset.o
+ .debug_line    0x0000000000008501      0xb60 ./src/hw/driver/rtc.o
+ .debug_line    0x0000000000009061      0xd5c ./src/hw/driver/uart.o
+ .debug_line    0x0000000000009dbd      0xd48 ./src/hw/driver/usb.o
+ .debug_line    0x000000000000ab05      0xb5a ./src/hw/hw.o
+ .debug_line    0x000000000000b65f      0xcb4 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o
+ .debug_line    0x000000000000c313      0xe1f ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o
+ .debug_line    0x000000000000d132      0xfd8 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.o
+ .debug_line    0x000000000000e10a      0xc61 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.o
+ .debug_line    0x000000000000ed6b     0x1102 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.o
+ .debug_line    0x000000000000fe6d      0xcaf ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o
+ .debug_line    0x0000000000010b1c     0x14be ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd.o
+ .debug_line    0x0000000000011fda      0x9f4 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd_ex.o
+ .debug_line    0x00000000000129ce      0xe23 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o
+ .debug_line    0x00000000000137f1     0x107c ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o
+ .debug_line    0x000000000001486d     0x138f ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o
+ .debug_line    0x0000000000015bfc     0x115d ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rtc.o
+ .debug_line    0x0000000000016d59     0x1423 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rtc_ex.o
+ .debug_line    0x000000000001817c     0x3cfc ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o
+ .debug_line    0x000000000001be78      0xed7 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o
+ .debug_line    0x000000000001cd4f     0x1154 ./src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usb.o
+ .debug_line    0x000000000001dea3      0xf49 ./src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o
+ .debug_line    0x000000000001edec      0xf9c ./src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+ .debug_line    0x000000000001fd88     0x1254 ./src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+ .debug_line    0x0000000000020fdc      0xbf3 ./src/lib/cube_g474/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
+ .debug_line    0x0000000000021bcf      0xbdb ./src/lib/cube_g474/USB_Device/App/usb_device.o
+ .debug_line    0x00000000000227aa      0xecb ./src/lib/cube_g474/USB_Device/App/usbd_cdc_if.o
+ .debug_line    0x0000000000023675      0xc78 ./src/lib/cube_g474/USB_Device/App/usbd_desc.o
+ .debug_line    0x00000000000242ed     0x1040 ./src/lib/cube_g474/USB_Device/Target/usbd_conf.o
+ .debug_line    0x000000000002532d      0xb3c ./src/main.o
 
 .debug_str      0x0000000000000000    0xf699e
  .debug_str     0x0000000000000000    0xee572 ./src/ap/ap.o
