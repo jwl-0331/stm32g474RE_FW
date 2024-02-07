@@ -15,6 +15,7 @@
 "./src/hw/driver/log.o"
 "./src/hw/driver/reset.o"
 "./src/hw/driver/rtc.o"
+"./src/hw/driver/swtimer.o"
 "./src/hw/driver/uart.o"
 "./src/hw/driver/usb.o"
 "./src/hw/hw.o"

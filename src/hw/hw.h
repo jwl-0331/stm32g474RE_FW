@@ -19,6 +19,7 @@
 #include "flash.h"
 #include "cli.h"
 #include "log.h"
+#include "swtimer.h"
 
 bool hwInit(void);
 

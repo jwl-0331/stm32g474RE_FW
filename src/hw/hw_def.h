@@ -38,4 +38,6 @@
 #define   HW_CLI_LINE_HIS_MAX    4
 #define   HW_CLI_LINE_BUF_MAX    64
 
+#define _USE_HW_SWTIMER
+
 #endif /* SRC_HW_HW_DEF_H_ */

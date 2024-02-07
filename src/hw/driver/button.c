@@ -10,7 +10,13 @@ extern "C" {
 #endif
 
 #include "button.h"
+#include "swtimer.h"
+#include "uart.h"
+#include "cli.h"
 
+#ifdef _USE_HW_CLI
+static void cliButton(cli_args_t *args);
+#endif
 #define BTN_EVENT_MAX          8
 
 typedef struct
@@ -97,6 +103,21 @@ bool buttonInit(void)
   {
    event_tbl[i] = NULL;
   }
+
+  swtimer_handle_t timer_ch;
+  timer_ch = swtimerGetHandle();
+  if (timer_ch >= 0)
+  {
+    swtimerSet(timer_ch, 10, LOOP_TIME, buttonISR, NULL);
+    swtimerStart(timer_ch);
+  }
+  else
+  {
+    uartPrintf(_DEF_UART1,"[NG] buttonInit()\n     swtimerGetHandle()\n");
+  }
+#ifdef _USE_HW_CLI
+  cliAdd("BUTTON", cliButton);
+#endif
   return ret;
 }
 
@@ -204,7 +225,7 @@ void buttonISR(void* args)
     }
   }
 
-  UART_Printf("pressed_cnt : %d\nrepeat_cnt : %d\nrepeat_time : %d\n", button_tbl[0].pressed_cnt, button_tbl[0].repeat_cnt, button_tbl[0].repeat_time);
+  uartPrintf("pressed_cnt : %d\nrepeat_cnt : %d\nrepeat_time : %d\n", button_tbl[0].pressed_cnt, button_tbl[0].repeat_cnt, button_tbl[0].repeat_time);
 }
 
 // btn - click : TRUE
@@ -417,6 +438,64 @@ uint32_t buttonEventGetRepeat(button_event_t *p_event, uint8_t ch)
   return ret;
 }
 
+#ifdef _USE_HW_CLI
+void cliButton(cli_args_t *args)
+{
+  bool ret = false;
+
+
+  if (args->argc == 1 && args->isStr(0, "info"))
+  {
+    for (int i=0; i<BTN_MAX_CH; i++)
+    {
+      cliPrintf("%-12s pin %d\n", buttonGetName(i), button_pin[i].pin);
+    }
+    ret = true;
+  }
+
+  if (args->argc == 1 && args->isStr(0, "show"))
+  {
+    while(cliKeepLoop())
+    {
+      for (int i=0; i<BTN_MAX_CH; i++)
+      {
+        cliPrintf("%d", buttonGetPressed(i));
+      }
+      delay(50);
+      cliPrintf("\r");
+    }
+    ret = true;
+  }
+
+  if (args->argc == 1 && args->isStr(0, "time"))
+  {
+    uint8_t ch;
+
+    ch = (uint8_t)args->getData(1);
+    ch = constrain(ch, 0, BTN_MAX_CH-1);
+
+    while(cliKeepLoop())
+    {
+      for (int i=0; i<BTN_MAX_CH; i++)
+      {
+        if(buttonGetPressed(i))
+        {
+          cliPrintf("%-12s, Time :  %d ms\n", buttonGetName(i), buttonGetPressedTime(i));
+        }
+      }
+      delay(10);
+    }
+    ret = true;
+  }
+
+  if (ret == false)
+  {
+    cliPrintf("button info\n");
+    cliPrintf("button show\n");
+    cliPrintf("button time\n", BTN_MAX_CH);
+  }
+}
+#endif
 #ifdef __cplusplus
 extern "C" }
 #endif

@@ -13,6 +13,7 @@ C_SRCS += \
 ../src/hw/driver/log.c \
 ../src/hw/driver/reset.c \
 ../src/hw/driver/rtc.c \
+../src/hw/driver/swtimer.c \
 ../src/hw/driver/uart.c \
 ../src/hw/driver/usb.c 
 
@@ -25,6 +26,7 @@ OBJS += \
 ./src/hw/driver/log.o \
 ./src/hw/driver/reset.o \
 ./src/hw/driver/rtc.o \
+./src/hw/driver/swtimer.o \
 ./src/hw/driver/uart.o \
 ./src/hw/driver/usb.o 
 
@@ -37,6 +39,7 @@ C_DEPS += \
 ./src/hw/driver/log.d \
 ./src/hw/driver/reset.d \
 ./src/hw/driver/rtc.d \
+./src/hw/driver/swtimer.d \
 ./src/hw/driver/uart.d \
 ./src/hw/driver/usb.d 
 
@@ -48,7 +51,7 @@ src/hw/driver/%.o src/hw/driver/%.su src/hw/driver/%.cyclo: ../src/hw/driver/%.c
 clean: clean-src-2f-hw-2f-driver
 
 clean-src-2f-hw-2f-driver:
-	-$(RM) ./src/hw/driver/button.cyclo ./src/hw/driver/button.d ./src/hw/driver/button.o ./src/hw/driver/button.su ./src/hw/driver/cdc.cyclo ./src/hw/driver/cdc.d ./src/hw/driver/cdc.o ./src/hw/driver/cdc.su ./src/hw/driver/cli.cyclo ./src/hw/driver/cli.d ./src/hw/driver/cli.o ./src/hw/driver/cli.su ./src/hw/driver/flash.cyclo ./src/hw/driver/flash.d ./src/hw/driver/flash.o ./src/hw/driver/flash.su ./src/hw/driver/led.cyclo ./src/hw/driver/led.d ./src/hw/driver/led.o ./src/hw/driver/led.su ./src/hw/driver/log.cyclo ./src/hw/driver/log.d ./src/hw/driver/log.o ./src/hw/driver/log.su ./src/hw/driver/reset.cyclo ./src/hw/driver/reset.d ./src/hw/driver/reset.o ./src/hw/driver/reset.su ./src/hw/driver/rtc.cyclo ./src/hw/driver/rtc.d ./src/hw/driver/rtc.o ./src/hw/driver/rtc.su ./src/hw/driver/uart.cyclo ./src/hw/driver/uart.d ./src/hw/driver/uart.o ./src/hw/driver/uart.su ./src/hw/driver/usb.cyclo ./src/hw/driver/usb.d ./src/hw/driver/usb.o ./src/hw/driver/usb.su
+	-$(RM) ./src/hw/driver/button.cyclo ./src/hw/driver/button.d ./src/hw/driver/button.o ./src/hw/driver/button.su ./src/hw/driver/cdc.cyclo ./src/hw/driver/cdc.d ./src/hw/driver/cdc.o ./src/hw/driver/cdc.su ./src/hw/driver/cli.cyclo ./src/hw/driver/cli.d ./src/hw/driver/cli.o ./src/hw/driver/cli.su ./src/hw/driver/flash.cyclo ./src/hw/driver/flash.d ./src/hw/driver/flash.o ./src/hw/driver/flash.su ./src/hw/driver/led.cyclo ./src/hw/driver/led.d ./src/hw/driver/led.o ./src/hw/driver/led.su ./src/hw/driver/log.cyclo ./src/hw/driver/log.d ./src/hw/driver/log.o ./src/hw/driver/log.su ./src/hw/driver/reset.cyclo ./src/hw/driver/reset.d ./src/hw/driver/reset.o ./src/hw/driver/reset.su ./src/hw/driver/rtc.cyclo ./src/hw/driver/rtc.d ./src/hw/driver/rtc.o ./src/hw/driver/rtc.su ./src/hw/driver/swtimer.cyclo ./src/hw/driver/swtimer.d ./src/hw/driver/swtimer.o ./src/hw/driver/swtimer.su ./src/hw/driver/uart.cyclo ./src/hw/driver/uart.d ./src/hw/driver/uart.o ./src/hw/driver/uart.su ./src/hw/driver/usb.cyclo ./src/hw/driver/usb.d ./src/hw/driver/usb.o ./src/hw/driver/usb.su
 
 .PHONY: clean-src-2f-hw-2f-driver
 

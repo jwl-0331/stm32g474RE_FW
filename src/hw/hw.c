@@ -5,6 +5,7 @@
  *      Author: mm940
  */
 #include "hw.h"
+button_event_t btn_evt;
 
 bool hwInit(void)
 {
@@ -12,6 +13,7 @@ bool hwInit(void)
 
   ret &= bspInit();
   ret &= rtcInit();
+  ret &= swtimerInit();
 #ifdef _USE_HW_RESET
   ret &= resetInit();
 #endif
@@ -24,6 +26,7 @@ bool hwInit(void)
 #endif
   ret &= flashInit();
   ret &= buttonInit();
+  ret &= buttonEventInit(&btn_evt, 5);
   ret &= ledInit();
   ret &= usbInit();
   ret &= usbBegin(USB_CDC_MODE);

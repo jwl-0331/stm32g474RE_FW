@@ -1,0 +1,8 @@
+../src/hw/driver/swtimer.c:46:6:swtimerInit	16	static
+../src/hw/driver/swtimer.c:72:6:swtimerISR	16	static
+../src/hw/driver/swtimer.c:102:6:swtimerSet	24	static
+../src/hw/driver/swtimer.c:113:6:swtimerStart	16	static
+../src/hw/driver/swtimer.c:121:6:swtimerStop	16	static
+../src/hw/driver/swtimer.c:128:6:swtimerReset	16	static
+../src/hw/driver/swtimer.c:136:18:swtimerGetHandle	16	static
+../src/hw/driver/swtimer.c:148:10:swtimerGetCounter	4	static

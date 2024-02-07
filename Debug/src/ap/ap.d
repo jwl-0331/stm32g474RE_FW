@@ -45,7 +45,8 @@ src/ap/ap.o: ../src/ap/ap.c ../src/ap/ap.h \
  C:/CubeWorspace/stm32g474_fw/src/common/include/button.h \
  C:/CubeWorspace/stm32g474_fw/src/common/include/flash.h \
  C:/CubeWorspace/stm32g474_fw/src/common/include/cli.h \
- C:/CubeWorspace/stm32g474_fw/src/common/include/log.h
+ C:/CubeWorspace/stm32g474_fw/src/common/include/log.h \
+ C:/CubeWorspace/stm32g474_fw/src/common/include/swtimer.h
 ../src/ap/ap.h:
 C:/CubeWorspace/stm32g474_fw/src/hw/hw.h:
 C:/CubeWorspace/stm32g474_fw/src/hw/hw_def.h:
@@ -94,3 +95,4 @@ C:/CubeWorspace/stm32g474_fw/src/common/include/button.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/flash.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/cli.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/log.h:
+C:/CubeWorspace/stm32g474_fw/src/common/include/swtimer.h:

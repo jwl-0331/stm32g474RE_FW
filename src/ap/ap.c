@@ -22,6 +22,7 @@ void apMain(void)
 {
   uint32_t pre_time1 = millis();
   uint32_t pre_time2 = millis();
+  swtimerISR();
   while(1)
   {
     /* LED Non blocking toggle*/

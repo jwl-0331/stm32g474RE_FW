@@ -47,7 +47,8 @@ src/bsp/stm32g4xx_hal_msp.o: ../src/bsp/stm32g4xx_hal_msp.c \
  C:/CubeWorspace/stm32g474_fw/src/common/include/button.h \
  C:/CubeWorspace/stm32g474_fw/src/common/include/flash.h \
  C:/CubeWorspace/stm32g474_fw/src/common/include/cli.h \
- C:/CubeWorspace/stm32g474_fw/src/common/include/log.h
+ C:/CubeWorspace/stm32g474_fw/src/common/include/log.h \
+ C:/CubeWorspace/stm32g474_fw/src/common/include/swtimer.h
 C:/CubeWorspace/stm32g474_fw/src/main.h:
 C:/CubeWorspace/stm32g474_fw/src/ap/ap.h:
 C:/CubeWorspace/stm32g474_fw/src/hw/hw.h:
@@ -97,3 +98,4 @@ C:/CubeWorspace/stm32g474_fw/src/common/include/button.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/flash.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/cli.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/log.h:
+C:/CubeWorspace/stm32g474_fw/src/common/include/swtimer.h:

@@ -34,7 +34,10 @@ src/hw/driver/button.o: ../src/hw/driver/button.c \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc_ex.h \
  C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
- C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h
+ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
+ C:/CubeWorspace/stm32g474_fw/src/common/include/swtimer.h \
+ C:/CubeWorspace/stm32g474_fw/src/common/include/uart.h \
+ C:/CubeWorspace/stm32g474_fw/src/common/include/cli.h
 C:/CubeWorspace/stm32g474_fw/src/common/include/button.h:
 C:/CubeWorspace/stm32g474_fw/src/hw/hw_def.h:
 C:/CubeWorspace/stm32g474_fw/src/bsp/bsp.h:
@@ -71,3 +74,6 @@ C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rtc_ex.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 C:/CubeWorspace/stm32g474_fw/src/lib/cube_g474/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
+C:/CubeWorspace/stm32g474_fw/src/common/include/swtimer.h:
+C:/CubeWorspace/stm32g474_fw/src/common/include/uart.h:
+C:/CubeWorspace/stm32g474_fw/src/common/include/cli.h:
