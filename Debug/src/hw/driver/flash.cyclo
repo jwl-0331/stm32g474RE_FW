@@ -1,5 +1,5 @@
 ../src/hw/driver/flash.c:27:6:flashInit	1
 ../src/hw/driver/flash.c:34:6:flashErase	6
-../src/hw/driver/flash.c:84:6:flashWrite	1
-../src/hw/driver/flash.c:92:6:flashRead	1
-../src/hw/driver/flash.c:99:6:flashInSector	9
+../src/hw/driver/flash.c:86:6:flashWrite	4
+../src/hw/driver/flash.c:121:6:flashRead	2
+../src/hw/driver/flash.c:137:6:flashInSector	9

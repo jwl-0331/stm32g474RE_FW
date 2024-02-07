@@ -41,8 +41,10 @@ bool flashErase(uint32_t addr, uint32_t length)
   HAL_FLASH_Unlock();
 
   /* Clear OPTVERR bit set on virgin samples */
-  __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_OPTVERR);
+  //__HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_OPTVERR);
 
+  //  Dual Bank -> FLASH_MAX_SECTOR  - 256
+  //  Single Bank -> FLASH_MAX_SECTOR  - 128
   for(int i=0; i< FLASH_MAX_SECTOR; i++)
   {
     if(flashInSector(i, addr, length) == true)
@@ -77,21 +79,57 @@ bool flashErase(uint32_t addr, uint32_t length)
      ret = true;
     }
   }
-
+  HAL_FLASH_Lock();
   return ret;
 }
 
 bool flashWrite(uint32_t addr, uint8_t *p_data, uint32_t length)
 {
-  bool ret = false;
 
+  bool ret = true;
+  HAL_StatusTypeDef status;
+
+  // 주소도 64 bit 설정한 값으로 align 되어있어야한다 (FLASH_TYPEPROGRAM_DOUBLEWORD)
+  if(addr%FLASH_WRITE_SIZE != 0) //16bit %2 , double-word (64-bit) %8
+  {
+    return false;
+  }
+  // FLASH 메모리를 access 하기 위해 필요
+  HAL_FLASH_Unlock();
+  // erase 와 같은 방법
+  for(int i = 0; i < length; i+=FLASH_WRITE_SIZE) // 64bit-8 , 16bit-2
+  {
+    uint64_t data;
+
+    memcpy(&data, &p_data[i], FLASH_WRITE_SIZE);
+    //data = p_data[i+0] << 0; //처음 data, shift하지 않는다 명시적으로 (<<0)
+    //data |= p_data[i+1] << 8;  // 두번쨰 부터는 OR 연산, 8비트 shift
+
+    status = HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, addr + i, data);
+    if(status != HAL_OK)
+    {
+      ret = false;
+      break;
+    }
+  }
+  // FLASH 메모리를 access 하기 위해 필요
+  HAL_FLASH_Lock();
 
   return ret;
 }
 
 bool flashRead(uint32_t addr, uint32_t *p_data, uint32_t length)
 {
-  bool ret = false;
+  bool ret = true;
+
+  // 1byte 데이터 포인터
+  uint8_t *p_byte = (uint8_t *) addr;
+
+  for(int i=0; i < length; i++)
+  {
+    p_data[i] = p_byte[i];
+  }
+
 
   return ret;
 }
@@ -107,7 +145,7 @@ bool flashInSector(uint16_t sector_num, uint32_t addr, uint32_t length)
   uint32_t flash_end;
 
   //#define FLASH_BASE            (0x08000000UL) /*!< FLASH (up to 512 kB) base address */
-
+  // 0x08000000 부터 find
   sector_start = FLASH_BASE + (sector_num * FLASH_SECTOR_SIZE);
   sector_end   = sector_start + FLASH_SECTOR_SIZE - 1;
   flash_start  = addr;
