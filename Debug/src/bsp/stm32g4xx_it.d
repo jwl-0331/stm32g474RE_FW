@@ -46,6 +46,8 @@ src/bsp/stm32g4xx_it.o: ../src/bsp/stm32g4xx_it.c \
  C:/CubeWorspace/stm32g474_fw/src/common/include/uart.h \
  C:/CubeWorspace/stm32g474_fw/src/common/include/button.h \
  C:/CubeWorspace/stm32g474_fw/src/common/include/flash.h \
+ C:/CubeWorspace/stm32g474_fw/src/common/include/cli.h \
+ C:/CubeWorspace/stm32g474_fw/src/common/include/log.h \
  ../src/bsp/stm32g4xx_it.h
 C:/CubeWorspace/stm32g474_fw/src/main.h:
 C:/CubeWorspace/stm32g474_fw/src/ap/ap.h:
@@ -94,4 +96,6 @@ C:/CubeWorspace/stm32g474_fw/src/common/include/usb.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/uart.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/button.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/flash.h:
+C:/CubeWorspace/stm32g474_fw/src/common/include/cli.h:
+C:/CubeWorspace/stm32g474_fw/src/common/include/log.h:
 ../src/bsp/stm32g4xx_it.h:

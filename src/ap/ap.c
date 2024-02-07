@@ -14,7 +14,8 @@ static uint32_t nextmill = 0;
 
 void apInit(void)
 {
-
+  //uartOpen(_DEF_UART1, 115200);
+  cliOpen(_DEF_UART1, 115200);
 }
 
 void apMain(void)
@@ -25,12 +26,14 @@ void apMain(void)
   {
     /* LED Non blocking toggle*/
     /* Using Reg to toggle */
+    /*
     if(millis()-pre_time1 >= 500)
     {
       pre_time1 = millis();
       //ledToggle(_DEF_LED1);
       gpio_out_toggle(GPIOA, GPIO_PIN_5);
     }
+    */
 
     /* LED On Off - by time*/
     /*
@@ -61,6 +64,7 @@ void apMain(void)
     */
 
     /* FLASH Test*/
+    /*
     if(uartAvailable(_DEF_UART1) > 0)
     {
       int8_t rx_data;
@@ -116,6 +120,9 @@ void apMain(void)
         }
       }
     }
+    */
+    cliMain();
+
   }
 }
 

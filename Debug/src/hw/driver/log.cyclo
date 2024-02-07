@@ -1,0 +1,2 @@
+../src/hw/driver/log.c:23:6:logInit	1
+../src/hw/driver/log.c:33:6:logPrintf	1

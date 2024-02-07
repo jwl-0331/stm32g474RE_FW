@@ -4,3 +4,4 @@
 ../src/hw/driver/usb.c:68:6:usbIsConnect	4
 ../src/hw/driver/usb.c:87:9:usbGetMode	1
 ../src/hw/driver/usb.c:92:6:usbBegin	6
+../src/hw/driver/usb.c:160:6:cliCmd	14

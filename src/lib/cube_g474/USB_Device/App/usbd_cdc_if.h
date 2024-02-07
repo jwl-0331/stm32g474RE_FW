@@ -30,7 +30,7 @@
 #include "usbd_cdc.h"
 
 /* USER CODE BEGIN INCLUDE */
-
+#include <stdbool.h>
 /* USER CODE END INCLUDE */
 
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
@@ -108,6 +108,12 @@ extern USBD_CDC_ItfTypeDef USBD_Interface_fops_FS;
 uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len);
 
 /* USER CODE BEGIN EXPORTED_FUNCTIONS */
+bool     cdcIfInit(void);
+uint32_t cdcIfAvailable(void);
+uint8_t  cdcIfRead(void);
+uint32_t cdcIfGetBaud(void);
+uint32_t cdcIfWrite(uint8_t *p_data, uint32_t length);
+bool     cdcIfIsConnected(void);
 
 /* USER CODE END EXPORTED_FUNCTIONS */
 

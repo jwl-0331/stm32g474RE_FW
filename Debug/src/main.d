@@ -44,7 +44,9 @@ src/main.o: ../src/main.c ../src/main.h \
  C:/CubeWorspace/stm32g474_fw/src/common/include/usb.h \
  C:/CubeWorspace/stm32g474_fw/src/common/include/uart.h \
  C:/CubeWorspace/stm32g474_fw/src/common/include/button.h \
- C:/CubeWorspace/stm32g474_fw/src/common/include/flash.h
+ C:/CubeWorspace/stm32g474_fw/src/common/include/flash.h \
+ C:/CubeWorspace/stm32g474_fw/src/common/include/cli.h \
+ C:/CubeWorspace/stm32g474_fw/src/common/include/log.h
 ../src/main.h:
 C:/CubeWorspace/stm32g474_fw/src/ap/ap.h:
 C:/CubeWorspace/stm32g474_fw/src/hw/hw.h:
@@ -92,3 +94,5 @@ C:/CubeWorspace/stm32g474_fw/src/common/include/usb.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/uart.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/button.h:
 C:/CubeWorspace/stm32g474_fw/src/common/include/flash.h:
+C:/CubeWorspace/stm32g474_fw/src/common/include/cli.h:
+C:/CubeWorspace/stm32g474_fw/src/common/include/log.h:

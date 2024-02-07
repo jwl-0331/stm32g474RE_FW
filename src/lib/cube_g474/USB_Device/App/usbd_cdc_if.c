@@ -400,7 +400,7 @@ uint32_t cdcIfWrite(uint8_t *p_data, uint32_t length)
 
   sent_len = 0;
 
-  pre_time = millis();
+  pre_time = HAL_GetTick();
   while(sent_len < length)
   {
     buf_len = (q_tx.len - qbufferAvailable(&q_tx)) - 1;

@@ -17,6 +17,8 @@
 #include "uart.h"
 #include "button.h"
 #include "flash.h"
+#include "cli.h"
+#include "log.h"
 
 bool hwInit(void);
 

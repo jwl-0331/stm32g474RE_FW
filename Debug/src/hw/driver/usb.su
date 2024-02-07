@@ -4,3 +4,4 @@
 ../src/hw/driver/usb.c:68:6:usbIsConnect	4	static
 ../src/hw/driver/usb.c:87:9:usbGetMode	4	static
 ../src/hw/driver/usb.c:92:6:usbBegin	24	static
+../src/hw/driver/usb.c:160:6:cliCmd	48	static

@@ -28,8 +28,8 @@ bool hwInit(void)
   ret &= usbInit();
   ret &= usbBegin(USB_CDC_MODE);
   ret &= uartInit();
-  ret &= uartOpen(_DEF_UART1, 115200);
-
+  ret &= logInit();
+  ret &= cliInit();
   /* Reset Test */
   uartPrintf(_DEF_UART1, "Reset Count : %d\n", resetGetCount());
   return ret;

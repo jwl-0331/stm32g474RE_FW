@@ -6,6 +6,9 @@
  */
 
 #include "led.h"
+#ifdef _USE_HW_CLI
+#include "cli.h"
+#endif
 
 // Using Reg to Control LED
 // LED periph uses APB2
@@ -28,8 +31,9 @@ static const led_table_t led_tbl[LED_MAX_CH] =
     {GPIOA, GPIO_PIN_5, GPIO_PIN_SET, GPIO_PIN_RESET},
 };
 
-
-
+#ifdef _USE_HW_CLI
+static void cliLed(cli_args_t *args);
+#endif
 
 bool ledInit(void)
 {
@@ -48,6 +52,9 @@ bool ledInit(void)
 
     ledOff(i);
   }
+#ifdef _USE_HW_CLI
+  cliAdd("LED", cliLed);
+#endif
   return true;
 }
 
@@ -92,3 +99,71 @@ void gpio_out_toggle(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)
   GPIO_TypeDef *gpio = (void*)GPIOA_BASE;
   gpio->ODR ^= GPIO_Pin;
 }
+
+#ifdef _USE_HW_CLI
+void cliLed(cli_args_t *args)
+{
+  bool ret = false;
+
+  if (args-> argc == 2 && args->isStr(0, "on") == true)
+  {
+    uint8_t led_ch;
+
+    led_ch = args->getData(1);
+
+    if(led_ch > 0)
+    {
+      led_ch--;
+    }
+    while(cliKeepLoop())
+    {
+      ledOn(led_ch);
+    }
+  }
+  else if (args-> argc == 2 && args->isStr(0, "off") == true)
+    {
+      uint8_t led_ch;
+
+      led_ch = args->getData(1);
+
+      if(led_ch > 0)
+      {
+        led_ch--;
+      }
+      while(cliKeepLoop())
+      {
+        ledOff(led_ch);
+      }
+    }
+  else if (args->argc == 3 && args->isStr(0, "toggle") == true)
+  {
+    uint8_t  led_ch;
+    uint32_t toggle_time;
+    uint32_t pre_time;
+
+    led_ch      = args->getData(1);
+    toggle_time = args->getData(2);
+
+    if (led_ch > 0)
+    {
+      led_ch--;
+    }
+
+    pre_time = millis();
+    while(cliKeepLoop())
+    {
+      if (millis()-pre_time >= toggle_time)
+      {
+        pre_time = millis();
+        ledToggle(led_ch);
+      }
+    }
+    ret = true;
+  }
+  if (ret != true)
+  {
+    cliPrintf("led On/Off ch[1~%d]\n", LED_MAX_CH);
+    cliPrintf("led toggle ch[1~%d] time(ms)\n", LED_MAX_CH);
+  }
+}
+#endif
