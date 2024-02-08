@@ -45,6 +45,26 @@ bool usbInit(void)
 {
   bool ret = true;
 
+  /* USB - RESET 시 장치관리자 해제 연결 안될 시 */
+
+  GPIO_InitTypeDef GPIO_InitStructure = {0, };
+  // PA12(USB_DP) 출력 설정
+  GPIO_InitStructure.Pin = GPIO_PIN_12;
+  GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStructure.Pull = GPIO_NOPULL;
+  GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+  //회로에 PULL UP 이 걸려있다면 - 내리고
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET);
+  delay(200);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET);
+
+  // INPUT 으로 다시 변경
+  GPIO_InitStructure.Mode = GPIO_MODE_INPUT;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+  MX_USB_Device_Init();
 
 #ifdef _USE_HW_CLI
   cliAdd("usb", cliCmd);

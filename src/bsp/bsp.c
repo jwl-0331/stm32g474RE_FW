@@ -5,7 +5,6 @@
  *      Author: mm940
  */
 #include "bsp.h"
-#include "usb_device.h"
 
 void SystemClock_Config(void);
 
@@ -19,8 +18,7 @@ bool bspInit(void)
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
-  /* USB - RESET 시 장치관리자 해제 연결 안될 시 */
-
+  // USB - Reset 상태로, reset 버튼 눌렀을때 연결 해제후 연결 되도록 하기위한 설정
   GPIO_InitTypeDef GPIO_InitStructure = {0, };
   // PA12(USB_DP) 출력 설정
   GPIO_InitStructure.Pin = GPIO_PIN_12;
@@ -31,14 +29,8 @@ bool bspInit(void)
 
   //회로에 PULL UP 이 걸려있다면 - 내리고
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET);
-  delay(100);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET);
 
-  // INPUT 으로 다시 변경
-  GPIO_InitStructure.Mode = GPIO_MODE_INPUT;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-  MX_USB_Device_Init();
 
   return true;
 }

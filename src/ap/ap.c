@@ -11,18 +11,19 @@ static uint32_t g_LEDOnTime = 1000;
 static uint32_t g_LEDOffTime = 200;
 static uint32_t nextmill = 0;
 */
-
 void apInit(void)
 {
-  //uartOpen(_DEF_UART1, 115200);
-  cliOpen(_DEF_UART1, 115200);
+  uartOpen(_DEF_UART1, 115200);
+  //cliOpen(_DEF_UART1, 115200);
 }
 
 void apMain(void)
 {
+  /* Reset Test */
+  uartPrintf(_DEF_UART1, "Reset Count : %d\n", resetGetCount());
+  logPrintf("log Test\n");
   uint32_t pre_time1 = millis();
   uint32_t pre_time2 = millis();
-  swtimerISR();
   while(1)
   {
     /* LED Non blocking toggle*/
@@ -122,7 +123,7 @@ void apMain(void)
       }
     }
     */
-    cliMain();
+    //cliMain();
 
   }
 }

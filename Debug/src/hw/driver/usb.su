@@ -1,7 +1,7 @@
-../src/hw/driver/usb.c:44:6:usbInit	16	static
-../src/hw/driver/usb.c:55:6:usbDeInit	8	static
-../src/hw/driver/usb.c:63:6:usbIsOpen	8	static
-../src/hw/driver/usb.c:68:6:usbIsConnect	4	static
-../src/hw/driver/usb.c:87:9:usbGetMode	4	static
-../src/hw/driver/usb.c:92:6:usbBegin	24	static
-../src/hw/driver/usb.c:160:6:cliCmd	48	static
+../src/hw/driver/usb.c:44:6:usbInit	32	static
+../src/hw/driver/usb.c:75:6:usbDeInit	8	static
+../src/hw/driver/usb.c:83:6:usbIsOpen	8	static
+../src/hw/driver/usb.c:88:6:usbIsConnect	4	static
+../src/hw/driver/usb.c:107:9:usbGetMode	4	static
+../src/hw/driver/usb.c:112:6:usbBegin	24	static
+../src/hw/driver/usb.c:180:6:cliCmd	48	static

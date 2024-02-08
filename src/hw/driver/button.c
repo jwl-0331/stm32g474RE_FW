@@ -277,7 +277,7 @@ bool buttonGetPressed(uint8_t ch)
   return button_tbl[ch].pressed;
 }
 
-//?
+
 uint32_t buttonGetData(void)
 {
   uint32_t ret = 0;

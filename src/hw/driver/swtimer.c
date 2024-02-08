@@ -133,6 +133,7 @@ void swtimerReset(swtimer_handle_t TmrNum)
   swtimer_tbl[TmrNum].Timer_Ctn  = swtimer_tbl[TmrNum].Timer_Init;
 }
 
+// handler 할당
 swtimer_handle_t swtimerGetHandle(void)
 {
   swtimer_handle_t TmrIndex = sw_timer_handle_index;

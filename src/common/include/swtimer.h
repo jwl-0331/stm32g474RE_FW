@@ -40,7 +40,7 @@ extern "C" {
 
 
 
-typedef int16_t             swtimer_handle_t;
+typedef int16_t swtimer_handle_t;
 
 
 

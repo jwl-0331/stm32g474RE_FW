@@ -52,7 +52,7 @@ bool resetInit(void)
   if(RCC->CSR & (1<<26))
   {
     rtcBackupRegWrite(RESET_REG_COUNT, rtcBackupRegRead(RESET_REG_COUNT) + 1);
-    delay(500);
+    delay(500); // 500 m delay
     reset_count = rtcBackupRegRead(RESET_REG_COUNT);
   }
   //clear 다시 0으로

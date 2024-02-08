@@ -4,5 +4,5 @@
 ../src/hw/driver/swtimer.c:113:6:swtimerStart	2
 ../src/hw/driver/swtimer.c:121:6:swtimerStop	2
 ../src/hw/driver/swtimer.c:128:6:swtimerReset	2
-../src/hw/driver/swtimer.c:136:18:swtimerGetHandle	2
-../src/hw/driver/swtimer.c:148:10:swtimerGetCounter	1
+../src/hw/driver/swtimer.c:137:18:swtimerGetHandle	2
+../src/hw/driver/swtimer.c:149:10:swtimerGetCounter	1
