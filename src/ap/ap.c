@@ -21,21 +21,18 @@ void apMain(void)
 {
   /* Reset Test */
   uartPrintf(_DEF_UART1, "Reset Count : %d\n", resetGetCount());
-  logPrintf("log Test\n");
   uint32_t pre_time1 = millis();
   uint32_t pre_time2 = millis();
   while(1)
   {
     /* LED Non blocking toggle*/
     /* Using Reg to toggle */
-    /*
-    if(millis()-pre_time1 >= 500)
+    if(millis()-pre_time1 >= 1000)
     {
       pre_time1 = millis();
       //ledToggle(_DEF_LED1);
       gpio_out_toggle(GPIOA, GPIO_PIN_5);
     }
-    */
 
     /* LED On Off - by time*/
     /*
@@ -66,7 +63,6 @@ void apMain(void)
     */
 
     /* FLASH Test*/
-    /*
     if(uartAvailable(_DEF_UART1) > 0)
     {
       int8_t rx_data;
@@ -90,7 +86,7 @@ void apMain(void)
         //지우고자하는 시작 주소 , length
         //if(flashErase(0x8000000 + (1024 * 60), 12) == true)
         //if(flashErase(0x08000000, 12) == true)
-        if(flashErase(0x8000000 + (1024 * 60), 12) == true)
+        if(flashErase(0x8000000, 32) == true)
         {
           uartPrintf(_DEF_UART1,"Erase OK\n");
         }
@@ -122,9 +118,7 @@ void apMain(void)
         }
       }
     }
-    */
     //cliMain();
 
   }
 }
-

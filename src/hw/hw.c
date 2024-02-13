@@ -35,4 +35,3 @@ bool hwInit(void)
   ret &= cliInit();
   return ret;
 }
-
